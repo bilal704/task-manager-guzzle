@@ -1,0 +1,134 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles */
+.table-auto th, .table-auto td {
+    text-align: left;
+}
+.shadow {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+.focus\:outline-none:focus {
+    outline: none;
+}
+.focus\:shadow-outline:focus {
+    box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);
+}
+body {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    color: #333;
+}
+h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+a, button {
+    color: #2563eb;
+}
+button:hover {
+    color: #1d4ed8;
+}
+form div {
+    margin-bottom: 1rem;
+}
+@media (max-width: 768px) {
+    #menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+    #menu.show {
+        display: flex;
+    }
+    #menu a {
+        margin: 0.5rem 0;
+    }
+}
+@media (min-width: 769px) {
+    #menu-toggle {
+        display: none;
+    }
+    #menu {
+        display: flex;
+    }
+}
+#menu-toggle {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+#menu-toggle svg {
+    display: block;
+    stroke: white;
+}
+
+#menu a:hover {
+    color: green;
+}
+
+.error-message {
+    background-color: pink;
+    padding: 5px;
+}
+
+.setup-message {
+    background-color: lightblue;
+    padding: 10px;
+    text-align: center;
+}
+
+.command-message {
+    background-color: lightyellow;
+    padding: 8px;
+    border: 1px solid orange;
+    text-align: center;
+}
+
+.upcoming-list {
+    margin-top: 16px;
+}
+.upcoming-item {
+    padding: 8px;
+    border: 1px solid red;
+    margin-bottom: 8px;
+}
+
+.command-message {
+    background-color: #e6fffa; /* Light teal background */
+    padding: 10px 15px; /* Space inside: 10px top/bottom, 15px left/right */
+    border-left: 4px solid #2dd4bf; /* Teal border on the left */
+    text-align: left; /* Align text to the left */
+    margin: 10px 0; /* Space above and below */
+    border-radius: 4px; /* Slightly rounded corners */
+}
+
+.command-message.scheduler-setup {
+    background-color: #fefcbf; /* Light yellow */
+    border-left: 4px solid #facc15; /* Yellow border */
+    padding: 12px 15px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+}
+
+.command-message.schedule-success {
+    background-color: #f0fff4;
+    border-left: 4px solid #22c55e;
+}
+
+.upcoming-item.overdue {
+    background-color: #ffe6e6; /* Light red */
+    border: 1px solid #ff3333; /* Red border */
+    color: #cc0000; /* Dark red text */
+}
+
+.review-summary {
+    background-color: #e6f3ff; /* Light blue */
+    padding: 15px;
+    border: 2px dashed #2563eb; /* Dashed blue border */
+    text-align: center;
+}

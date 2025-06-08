@@ -4,8 +4,65 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4754b6988b7b02102acbe480a6d71e3f",
+    "content-hash": "6a9f061ff1cc20573d59b9db1753e0a1",
     "packages": [
+        {
+            "name": "brianlmoon/gearmanmanager",
+            "version": "2.3.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/brianlmoon/GearmanManager.git",
+                "reference": "da3a932be945f7dbe567bd60eb142eedf87cdd91"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/brianlmoon/GearmanManager/zipball/da3a932be945f7dbe567bd60eb142eedf87cdd91",
+                "reference": "da3a932be945f7dbe567bd60eb142eedf87cdd91",
+                "shasum": ""
+            },
+            "require": {
+                "ext-pcntl": "*",
+                "ext-posix": "*",
+                "php": "^8.0.0"
+            },
+            "suggest": {
+                "brianlmoon/net_gearman": "A PHP interface for Gearman (requires version 2.*)",
+                "ext-gearman": "PHP wrapper to libgearman"
+            },
+            "bin": [
+                "bin/pear_manager.php",
+                "bin/pecl_manager.php"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "GearmanManager\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-2-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Brian Moon",
+                    "homepage": "http://brian.moonspot.net"
+                }
+            ],
+            "description": "PHP daemon for managing gearman workers",
+            "homepage": "http://brian.moonspot.net/GearmanManager",
+            "keywords": [
+                "gearman",
+                "gearman-manager",
+                "net_gearman",
+                "php"
+            ],
+            "support": {
+                "issues": "https://github.com/brianlmoon/GearmanManager/issues",
+                "source": "https://github.com/brianlmoon/GearmanManager/tree/2.3.1"
+            },
+            "time": "2024-11-22T22:16:25+00:00"
+        },
         {
             "name": "brick/math",
             "version": "0.12.3",
